@@ -1,0 +1,1 @@
+ps o pid,command | grep -E "^\s*[0-9]{5}\s+.*127\.0\.0\.1.*$" | sort -r
