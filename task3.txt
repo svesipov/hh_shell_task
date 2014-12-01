@@ -1,1 +1,1 @@
-grep -E -i -r -l "^error$" . > log_files_with_error.txt && cat log_files_with_error.txt | xargs wc -c
+find . -name "*.log" | xargs grep -E -i -l "^error$" > log_files_with_error.txt && cat log_files_with_error.txt | xargs wc -c
