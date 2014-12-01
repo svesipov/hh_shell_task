@@ -1,3 +1,1 @@
-
-
-1) find . -name "*.java" | xargs grep -E -L "^import hh\.ru\.deathstar$"
+find . -name "*.java" | xargs grep -E -L "^import hh\.ru\.deathstar$" > almost_harmless.txt
